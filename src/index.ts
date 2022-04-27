@@ -39,6 +39,7 @@ app.post('/', (req: Request, res: Response): void => {
 
 app.get('/', (req: Request, res: Response): void => {
   res.send('this Home');
+  res.json('this Home j');
 });
 
 app.listen(port, () => {
