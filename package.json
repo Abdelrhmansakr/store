@@ -11,17 +11,11 @@
         "migration:run": "db-migrate up",
         "format": "prettier --write src/**/*.ts",
         "test": "export NODE_ENV=test && db-migrate up --env test && tsc && jasmine-ts && db-migrate down",
-<<<<<<< HEAD
-        "test:window": "set NODE_ENV=test && db-migrate up --env test && tsc && jasmine-ts && db-migrate down",
-        "lint": "eslint src/**/*.ts",
-        "lint:fix": "eslint --fix"
-=======
         "jasmine-ts": "jasmine-ts",
         "testj": "npm run build && npm run jasmine-ts",
         "test:window": "set NODE_ENV=test && db-migrate up --env test && tsc && jasmine-ts && db-migrate down",
         "lint": "eslint src/**/*.ts",
         "lintfix": "eslint src/**/*.ts --fix"
->>>>>>> 358369b (init project)
     },
     "devDependencies": {
         "@types/bcrypt": "^5.0.0",
@@ -30,15 +24,9 @@
         "@types/morgan": "^1.9.3",
         "@types/pg": "^8.6.3",
         "@types/supertest": "^2.0.11",
-<<<<<<< HEAD
-        "@typescript-eslint/eslint-plugin": "^5.8.1",
-        "@typescript-eslint/parser": "^5.8.1",
-        "eslint": "^8.5.0",
-=======
         "@typescript-eslint/eslint-plugin": "^5.21.0",
         "@typescript-eslint/parser": "^5.21.0",
         "eslint": "^8.14.0",
->>>>>>> 358369b (init project)
         "eslint-config-prettier": "^8.3.0",
         "eslint-plugin-prettier": "^4.0.0",
         "jasmine": "^3.10.0",
