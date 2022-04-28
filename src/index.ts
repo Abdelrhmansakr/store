@@ -38,7 +38,7 @@ app.post('/', (req: Request, res: Response): void => {
 });
 
 app.get('/', (req: Request, res: Response): void => {
-  res.send('this Home');
+  res.send('this Home1');
   // res.json('this Home jsoonn');
 });
 
