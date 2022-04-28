@@ -39,11 +39,7 @@ app.post('/', (req: Request, res: Response): void => {
 
 app.get('/', (req: Request, res: Response): void => {
   res.send('this Home');
-<<<<<<< HEAD
-  res.json('this Home jsoonn');
-=======
   // res.json('this Home jsoonn');
->>>>>>> c86b000 (last)
 });
 
 app.listen(port, () => {
