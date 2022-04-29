@@ -15,9 +15,12 @@ const request = supertest(app);
 
 //connection
 app.get('/', (req: Request, res: Response): void => {
-  //throw new Error('a7oooo 3mlt eh ia menaillll');
-  res.send('this Home1');
-  // res.json('this Home jsoonn');
+  try {
+    res.send('this Home1');
+    // res.json('this Home jsoonn');
+  } catch (error) {
+    throw new Error(`a7oooo 3mlt eh ia menaillll:${error}`);
+  }
 });
 app.listen(port, () => {
   console.log(`server started at localhost:${port}`);
