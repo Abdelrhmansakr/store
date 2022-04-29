@@ -5,7 +5,7 @@ const request = supertest(app);
 
 describe('test endpoint', () => {
   it('get the endpoint ', async () => {
-    const reson = await request.get('/http GET:3000');
+    const reson = await request.get('/');
     expect(reson.status).toBe(200);
   });
 });
