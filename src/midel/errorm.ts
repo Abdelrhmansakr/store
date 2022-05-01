@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import Error from '../interface/ierorr';
+import Error from '../interface/erorri';
 const merror = (
   error: Error,
   req: Request,
